@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Websheet</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header>
+    <h1>Websheet</h1>
+    <label class="upload">Upload
+      <input id="file" type="file" accept=".xlsx,.xlsm,.xls,.csv,.tsv,.ods">
+    </label>
+    <p id="status"></p>
+  </header>
+  <div id="toolbar">
+    <button type="button" data-act="bold" aria-pressed="false"><b>B</b></button>
+    <button type="button" data-act="italic" aria-pressed="false"><i>I</i></button>
+    <button type="button" data-act="underline" aria-pressed="false"><u>U</u></button>
+    <button type="button" data-act="align" data-value="left">Left</button>
+    <button type="button" data-act="align" data-value="center">Center</button>
+    <button type="button" data-act="align" data-value="right">Right</button>
+    <label>Text <input id="color" type="color" value="#1c1917"></label>
+    <label>Fill <input id="bg" type="color" value="#fef08a"></label>
+    <button type="button" data-act="row">Insert row</button>
+    <button type="button" data-act="col">Insert column</button>
+    <button type="button" data-act="check">Checkbox</button>
+  </div>
+  <div id="tabs"></div>
+  <div id="grid"></div>
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
