@@ -59,3 +59,8 @@ Websheet does not download or export the workbook. Formula cells show the value 
 | `js/import.js` | Turns an uploaded file into that workbook |
 | `js/view.js` | Draws the grid, selection, and cell editor |
 | `js/main.js` | Connects upload, sheet tabs, and the toolbar |
+
+#TODO:
+- add docker container
+- bug fixes
+- TBD
